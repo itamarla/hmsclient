@@ -1,5 +1,16 @@
-HMSClient
-=========
+HMSClient For Hive Metastore API version 3.0
+============================================
+
+This repo is just a rebuild of @gglanzani great work here: https://github.com/gglanzani/hmsclient.
+All I have done is to regenerate the code according to the authors instructions (below).
+After installing all the prereqs, the command ran to regenerate the code was:
+
+.. code-block:: shell
+    
+    python generate.py --metastore_url https://raw.githubusercontent.com/apache/hive/branch-3.0/standalone-metastore/src/main/thrift/hive_metastore.thrift
+    
+Below: the original writers notes
+
 
 This project aims to be an up to date Python client to interact with the Hive metastore
 using the Thrift protocol.
@@ -7,7 +18,7 @@ using the Thrift protocol.
 Installation
 ------------
 
-Install it with ``pip install hmsclient`` or directly from source
+Install it with ``pip install hmsclient-hive-3`` or directly from source
 
 .. code-block:: python
 
